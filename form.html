@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <center><h1>FORMS</h1></center>
+    <form action="" autocomplete="on" method="post">
+
+        <fieldset>
+            <legend>Enter the details:</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="fn">First name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fn" name="fn" placeholder="First name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ln">Last name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="ln" placeholder="Last name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="em">E-mail</label>
+                    </td>
+                    <td>
+                        <input type="email" id="em" placeholder="E-mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pass" placeholder="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="add">Address</label>
+                    </td>
+                    <td>
+                        <textarea name="" id="add" placeholder="address" required></textarea>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <label for="tech">Technologies</label>
+                    </td>
+                    <td>
+                        <select name="" id="tech">
+                            <option value="">HTML</option>
+                            <option value="">CSS</option>
+                            <option value="">JS</option>
+                            <option value="">REACT JS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                   <td>
+                      <label for="time">Enter the date</label>
+                   </td>
+                   <td>
+                    <input type="datetime-local" name="date" id="time" required>
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="file">Choose the file</label>
+                    </td>
+                    <td>
+                        <input type="file" id="file" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>
+                         <input type="radio" name="gender" value="male">Female
+                         <input type="radio" name="gender" value="Female">Male
+                         <input type="radio" name="gender" value="Others">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pro">Profile</label>
+                    </td>
+                    <td>
+                    <input type="image" src="https://cdn.pixabay.com/photo/2015/04/24/20/58/girl-738303_1280.jpg"   id="pro" height="100px" width="100px" style="border-radius: 50%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Sports</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="sport" value="cricket">Cricket
+                        <input type="checkbox" name="sport1" value="football">Football
+                        <input type="checkbox" name="sport2" value="vollyball">Vollyball
+                        <input type="checkbox" name="sport3" value="kho kho">Kho Kho
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ice">Ice cream flavours</label>
+                    </td>
+                    <td>
+                        <input list="ice1" name="ice" id="ice">
+                        <datalist id="ice1">
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Black current">Black current</option>
+                            <option value="Vanilla">Vanilla</option>
+                            <option value="Butterscotch">Butterscotch</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num">Enter the number</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="number" id="num" minlength="1" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="col">Choose the color</label>
+                    </td>
+                    <td>
+                        <input type="color" name="col" id="col">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="col">hidden</label>
+                    </td>
+                    <td>
+                        <input type="hidden" name="col" id="col">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="col">Select the range</label>
+                    </td>
+                    <td>
+                    <input type="range" name="col" id="col">
+                    </td>
+                    <tr>
+                        <td>
+                            <label for="">Enter the url</label>
+                        </td>
+                        <td>
+                            <input type="search">
+                        </td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>
+                        <button>submit</button>
+                    </td>
+                    <td>
+                        <button type="reset">cancel</button>
+                    </td>
+                </tr>  
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
